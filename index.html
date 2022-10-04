@@ -50,16 +50,16 @@
                 <h2 class="head-section">THE BAND</h2>
                 <p class="sub-head-section">We love music</p>
                 <p class="about">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="member-list">
-                    <div class="text-center column column-three row">
+                <div class="member-list row">
+                    <div class="text-center column column-three ">
                         <p class="member-name">Name</p>
                         <img src="./assets/image/member/member1.jpg" alt="Name" class="member-img">   
                     </div>
-                    <div class="text-center column column-three row">
+                    <div class="text-center column column-three ">
                         <p class="member-name">Name</p>
                         <img src="./assets/image/member/member2.jpg" alt="Name" class="member-img">
                     </div>
-                    <div class="text-center column column-three row">
+                    <div class="text-center column column-three ">
                         <p class="member-name">Name</p>
                         <img src="./assets/image/member/member3.jpg" alt="Name" class="member-img">
                     </div>
@@ -173,32 +173,60 @@
                         Send To
                     </label>
                     <input type="text" class="modal-input" placeholder="Enter email">
-                    <button class="modal-pay">Pay <i class="ti-check"></i></button>
+                    <button class="modal-pay js-modal-pay">Pay <i class="ti-check"></i></button>
                 </div>
                 <div class="modal-footer">
                     <p>Need <a href="#" class="modal-help">help?</a></p>
                 </div>
             </div>
         </div>
+        <div class="modal-buy-ticket js-modal-gift">
+            <div class="gift-window">
+                <div class="modal-close js-gift-close">
+                    <i class="ti-close"></i>
+                </div>
+                <div class="gift-header">Chúc mừng!</div>
+                <div class="modal-body">
+                    <div class="gift-img">
+                        <img src="./assets/image/gift/cai nit.jpg" alt="">
+                    </div>
+                    <p class="gift-content">Bạn đã nhận được 1 phần <i class="ti-gift"></i> bí mật</p>
+                    <a href="https://www.facebook.com/bun.beos.113" class="gift-nhan-qua">Inbox to nhận quà</a>
+                </div>
+            </div>
+        </div>
+
         <script>
             const modalBtns= document.querySelectorAll('.js-place-btn')
             const modal = document.querySelector('.js-modal-buy-ticket')
             const modalClose=document.querySelector('.js-modal-close')
+            const modalClose2=document.querySelector('.js-gift-close')
             const modalWindow =document.querySelector('.js-modal-window')
+            const modalPay=document.querySelector('.js-modal-pay')
+            const modalGift=document.querySelector('.js-modal-gift')
             function showModal(){
                 modal.classList.add('open')
             }
             function hideModal(){
                 modal.classList.remove('open')
+                modalGift.classList.remove('open')
             }
             for(const modalBtn of modalBtns){
                 modalBtn.addEventListener('click', showModal)
             }
             modalClose.addEventListener('click', hideModal)
             modal.addEventListener('click', hideModal)
+            modalPay.addEventListener('click', function(){
+                modalGift.classList.add('open')
+            })
+            modalClose2.addEventListener('click',function(){
+                modalGift.classList.remove('open')
+
+            })
             modalWindow.addEventListener('click', function(event){
                 event.stopPropagation()
             })
+            
         </script>
     </div>
 

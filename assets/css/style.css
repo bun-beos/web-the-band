@@ -158,9 +158,12 @@ html{
 /*--Content-about-- */
 #content .section{
   width: 800px;
-  padding: 64px 0 112px;
+  max-width: 100%;
+  padding: 64px  112px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 #content .head-section{
   margin: 10px 0 ;
@@ -199,7 +202,6 @@ html{
   background-color: #000;
 }
 .time-ticket{
-  width: 800px;
   background-color: #fff;
   margin-top: 40px;
   margin-left: auto;
@@ -275,6 +277,8 @@ html{
 }
 .modal-window{
   width: 900px;
+  max-width: calc(100% - 36px);
+  min-height: 200px;
   background-color: #fff;
   position: relative;
   animation: modalFadeIn ease 0.4s;
@@ -334,6 +338,50 @@ html{
 .modal-help{
   color: #2196f3;
 }
+.gift-window{
+  width: 450px;
+  max-width: calc(100% - 36px);
+  min-height: 200px;
+  background-color: #fff;
+  position: relative;
+  animation: modalFadeIn ease 0.4s;
+}
+.gift-img img{
+  width: 16%;
+  display: block;
+  margin: 0 auto 10px;
+}
+.gift-header {
+  font-size: 30px;
+  padding: 20px 16px;
+  color: #fff;
+  background-color: #f95252;
+  text-align: center;
+  letter-spacing: 6px;
+}
+.gift-content {
+  text-align: center;
+  font-size: 21px;
+}
+.gift-content .ti-gift{
+  color: red;
+}
+.gift-nhan-qua{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(255 34 34 / 70%);
+  text-align: center;
+  width: 46%;
+  margin: 24px auto;
+  line-height: 26px;
+  font-size: 19px;
+  padding: 8px;
+}
+.gift-nhan-qua:hover{
+  background-color: #ddd;
+  color: #000;
+}
 @keyframes modalFadeIn{
   from{
     transform: translateY(-140px) ;
@@ -380,7 +428,6 @@ html{
 }
 .img-map img{
   width: 100%;
-  height: 800px;
 }
 
 /* --Footer-- */
