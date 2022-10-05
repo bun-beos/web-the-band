@@ -53,6 +53,9 @@ html{
 .mt-16{
   margin-top: 16px;
 }
+.mt-32{
+  margin-top: 32px;
+}
 .btn{
   display: inline-block;
   padding: 10px 16px;
@@ -189,9 +192,6 @@ html{
   line-height: 1.4;
   text-align: justify;
   font-size: 16px;
-}
-#content .member-list{
-  margin-top: 32px;
 }
 #content.member-name{
   font-size: 15px;
