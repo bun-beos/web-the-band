@@ -2,8 +2,31 @@
 @media (min-width:1024px){
 
 }
+/* Tablet & Mobile */
+@media (max-width:1023px){
+    .btn{
+        padding: 15px 16px;
+    }
+    .contact-form .input{
+        padding: 15px;
+    }
+    .contact-info{
+        line-height: 2;
+    }
+    #footer .social-list a{
+        font-size: 24px;
+        padding: 0 4px;
+    }
+    #footer .source{
+        padding: 8px 0;
+    }
+}
+
 /* Tablet*/
 @media (min-width:740px) and (max-width:1023px){
+    .subnav li a{
+        padding: 5px 16px;
+    }
 
 }
 /* Mobile */

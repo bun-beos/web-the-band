@@ -410,6 +410,12 @@ html{
   display: inline-block;
   width:30px;
 }
+.contact-info a{
+  color: #2694ede6;
+}
+.contact-info a:hover{
+  color: #006bfd;
+}
 .contact-form {
   font-size: 15px;
 }
