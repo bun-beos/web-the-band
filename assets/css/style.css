@@ -145,18 +145,16 @@ html{
 }
 
 /* --Slider-- */
-#slider {
-  margin-top: 46.5px;
-  padding-top: 50%;
-  background: url('../image/map/map.jpg') top center / cover;
-  position: relative;
+#slider .slider-img{
+  width: 100%;
 }
-#slider .content{
-  color: rgb(255, 9, 9);
-  position: absolute; 
+#slider .slider-title{
+  margin-top: -74px;
+  position: relative; 
+  text-align: center;
   bottom: 16px;
   width: 100%;
-  text-align: center;
+  color: #fff;
 }
 #slider .heading{
   margin-bottom: 25px;
