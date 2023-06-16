@@ -146,6 +146,7 @@ html{
 
 /* --Slider-- */
 #slider .slider-img{
+  margin-top: 46.5px;
   width: 100%;
 }
 #slider .slider-title{
@@ -157,7 +158,7 @@ html{
   color: #fff;
 }
 #slider .heading{
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 /*--Content-about-- */
