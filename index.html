@@ -53,20 +53,23 @@
                     <div class="boying">Thank you, Chicago - A night we won't forget.</div>
                 </div>
             </div>
-            <div class="content" style="display: none;">
+            <div class="content">
                 <img class="slider-img" src="./assets/images/slider/la.jpg" alt="">
                 <div class="slider-title">
                     <h2 class="heading">Los Angeles</h2>
                     <div class="boying">We had the best time playing at Venice Beach!</div>
                 </div>
             </div>
-            <div class="content" style="display: none;">
+            <div class="content">
                 <img class="slider-img" src="./assets/images/slider/ny.jpg" alt="">
                 <div class="slider-title">
                     <h2 class="heading">New York</h2>
                     <div class="boying">The atmosphere in New York is lorem ipsum.</div>
                 </div>
             </div>
+
+            <!-- <button class="prev" onclick="plusSlides(-1)">❮</button>
+            <button class="next" onclick="plusSlides(1)">❯</button> -->
         </div>
         <!-- End slider -->
 
@@ -234,6 +237,23 @@
             </div>
         </div>
     </div>
+
+    <!-- slider -->
+    <script>
+        let slideIndex = 0
+        showSlides()
+        function showSlides() {
+            let i
+            let slides = document.getElementsByClassName("content")
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"
+            }
+            slideIndex++
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block"
+            setTimeout(showSlides, 2000) // Change image every 2 seconds
+        }
+    </script>
 
     <!-- Buy ticket -->
     <script>
